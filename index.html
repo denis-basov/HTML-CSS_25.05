@@ -5,6 +5,28 @@
     <title>Document</title>
 </head>
 <body>
+    <header style="display: flex; gap: 20px">
+        <img src="images/icon.jpg" alt="логотип" width="50">
+        <nav style="font-size: 30px;">
+            <a href="index.html">Главная</a>
+            <a href="shop.html">Магазин</a>
+            <a href="news.html">Новости</a>
+        </nav>
+    </header>
+
+    <!-- форма -->
+    <form>
+        <label>Имя:</label>
+        <input type="text" name="fName"><br>
+
+        <label>Фамилия:</label>
+        <input type="text" name="lName"><br>
+
+        <input type="submit" value="Войти">
+    </form>
+    <!-- / форма -->
+
+
     <!-- это заголовок первого уровня зеленого цвета шириной 500 п -->
     <h1 style="color: #619744; width: 500px; background: blueviolet;">Привет, мир</h1>
     <h3>Привет, мир</h3>
@@ -16,10 +38,72 @@
         tempora est autem quisquam architecto voluptas possimus quidem animi. 
         Officiis, temporibus!</h6>
 
-    <a href="https://unsplash.com/" style="font-size: 32px;" target="_blank">Ссылка на unsplash</a>
+    <a href="https://unsplash.com/" style="font-size: 32px;" target="_blank">Ссылка на unsplash</a><br><hr>
+    <a href="shop.html">Калог товаров</a>
+
+    <a href="https://unsplash.com/" style="font-size: 32px;" target="_blank">
+        <img src="images/pic1.jpg" alt="природа" width="100">
+    </a>
 
     <img src="images/pic1.jpg" alt="природа" width="300">
     <img src="https://images.unsplash.com/photo-1707027757339-5fbaa6c66692?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fCVEMCVCRiVEMSU4MCVEMCVCOCVEMSU4MCVEMCVCRSVEMCVCNCVEMCVCMHxlbnwwfHwwfHx8MA%3D%3D" alt="природа" width="300">  
+
+    <!-- Блок с пользователями -->
+    <h2>Посетители сайта</h2>
+    <div class="users" style="display: flex; gap: 20px">
+        <div class="user user-1" style="background: rgb(118, 118, 195);">
+            <img src="images/pic2.jpg" alt="Иван Иванов" width="200">
+            <h3>Иван Иванов</h3>
+            <p>Возраст: 26 лет</p>
+            <p>Город: Москва</p>
+            <p>Ул: Гагарина</p>
+        </div>
+    
+        <div class="user user-2" style="background: rgb(144, 199, 137);">
+            <img src="images/pic3.jpg" alt="Мария Иванова" width="200">
+            <h3>Мария Иванова</h3>
+            <p>Возраст: 19 лет</p>
+            <p>Город: СПБ</p>
+            <p>Ул: Пушкина</p>
+        </div>
+
+        <div class="user-3" style="background: rgb(118, 118, 195);">
+            <img src="images/pic2.jpg" alt="Иван Иванов" width="200">
+            <h3>Иван Иванов</h3>
+            <p>Возраст: 26 лет</p>
+            <p>Город: Москва</p>
+            <p>Ул: Гагарина</p>
+        </div>
+
+        <div class="user-4" style="background: rgb(144, 199, 137);">
+            <img src="images/pic3.jpg" alt="Мария Иванова" width="200">
+            <h3>Мария Иванова</h3>
+            <p>Возраст: 19 лет</p>
+            <p>Город: СПБ</p>
+            <p>Ул: Пушкина</p>
+        </div>
+    </div>
+    <!-- / Блок с пользователями -->
+
+    <ul>
+        <li>Самара</li>
+        <li>СПБ</li>
+        <li>Пермь</li>
+        <li>Сочи
+            <ol>
+                <li>Пушкина</li>
+                <li>Ленина</li>
+                <li>Лермонтова</li>
+            </ol>
+        </li>
+    </ul>
+
+    <ol reversed type="I">
+        <li>Самара</li>
+        <li>СПБ</li>
+        <li>Пермь</li>
+        <li>Сочи</li>
+    </ol>
 
 </body>
 </html>
