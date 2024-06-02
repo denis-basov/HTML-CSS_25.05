@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS основы</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- подключаем шрифт с сайта гугл -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="main-nav">
+            <ul>
+                <li>Главная</li>
+                <li>Новости</li>
+                <li>Магазин</li>
+                <li>Контакты</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- комментарий -->
+    <h1 class="head1">CSS основы</h1>
+
+    <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+
+    <p class="par1" id="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum odit sequi reprehenderit recusandae. Neque voluptas illum non cum deleniti dolorem?</p>
+
+    <img class="images hidden" src="images/ayush-kumar-UltEQuF-MII-unsplash.jpg" alt="картинка">
+
+
+    <div class="absolute">
+        <div class="child">Неоновая надпись</div>
+    </div>
+
+    <button id="add-info">Доп инфо</button>
+    <div class="user hidden">
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. <span>Dolorum odit sequi reprehenderit recusandae.</span> Neque voluptas illum non cum deleniti dolorem?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum odit sequi reprehenderit recusandae. Neque voluptas illum non cum deleniti dolorem?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum odit sequi reprehenderit recusandae. Neque voluptas illum non cum deleniti dolorem?</p>
+    </div>
+
+    <p class="par2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, vel? Nesciunt debitis molestias modi ut!</p>
+
+
+    <script>
+        let addInfo = document.querySelector('#add-info');
+        let userDiv = document.querySelector('.user');
+
+        addInfo.addEventListener('click', function(){
+            userDiv.classList.toggle('hidden');
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+html{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h1{
+    /* стили */
+    color:#2e713a;
+    background-color: rgb(78, 166, 243);
+    margin: 50px;
+    font-weight: normal;
+    font-size: 50px;
+}
+
+.head1{
+    color:chocolate;
+    background-color: crimson;
+    transition: all 0.4s;
+}
+
+.head1:hover{
+    color:rgb(146, 219, 77);
+    background-color: rgb(67, 70, 244);
+}
+
+p{
+    color: blueviolet;
+    background-color: #2e713a;           
+}
+
+.par1{
+    color: red;
+    background-color: aliceblue;
+    border: 3px solid olivedrab;
+    border-radius: 7px;
+}
+
+/* #text1{
+    color:black;
+} */
+
+.images{
+    width: 200px;
+    border: 5px solid gray;
+    border-radius: 50%;
+    /* display: none; */
+}
+
+.user{
+    width: 500px;
+    /* height: 200px; */
+    background-color: cadetblue;
+    border: 5px solid firebrick;
+    margin: 20px;
+    /* margin: 20px 40px; */
+    /* margin: 20px 15px 10px 25px; */
+    /* margin: 20px 25px 15px; */
+
+    padding: 20px;
+    /* padding-top: 20px; */
+    /* padding-left: 20px; */
+}
+
+/* стили для параграфов внутри блока с классом user */
+.user p{
+    color: black;
+    background-color: aliceblue;
+    margin: 0;
+    /* padding: 10px; */
+    margin-bottom: 10px;
+    /* padding-bottom: 10px; */
+    padding: 5px;
+    border-radius: 5px;
+    /* font-weight: bold;
+    font-size: 12px; */
+    font-family:'Times New Roman', Times, serif;
+    /* font-style: italic; */
+}
+
+.user p span{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.hidden{
+    display: none;
+}
+
+.absolute{
+    width: 500px;
+    height: 500px;
+    /* background-color: #63da78; */
+    background-image: url("https://images.unsplash.com/photo-1716969283310-51c36a9484ec?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    
+    margin-left: 100px;
+
+    position: relative;
+}
+
+.absolute .child{
+    width: 150px;
+    background-color: rgba(160, 235, 173, 0.4);
+    padding: 5px;
+
+    position: absolute;
+    top: 320px;
+    left: 150px;
+    /* top: -20px;
+    right: -50px; */
+}
+
+header{
+    background-color: aliceblue;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* навигация в шапке */
+header .main-nav{
+    background-color: rgb(204, 225, 244);
+    padding: 10px;
+}
+
+header .main-nav ul{
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+header .main-nav ul li{
+    /* display: inline-block; */
+    color:rgb(31, 33, 154);
+    font-size: 22px;
+    font-weight: 300;
+    background-color: rgb(154, 199, 240);
+    width: 130px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.5s;
+}
+
+header .main-nav ul li:hover{
+    background-color: rgb(125, 184, 240);
+    cursor: pointer;
+    /* text-decoration: underline; */
+    border-bottom: 2px solid rgb(63, 63, 117);
+    /* border-right: 2px solid rgb(63, 63, 117); */
+}
