@@ -1,0 +1,19 @@
+/* Стили по умолчанию  */
+body {
+    font-size: 20px;
+}
+
+/* Стили для экранов менее 1024 пикселей */
+@media (max-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+/* Стили для экранов менее 768 пикселей */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+
