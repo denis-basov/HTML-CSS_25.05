@@ -1,0 +1,118 @@
+.grid-container{
+    max-width: 1200px;
+    background-color: rgb(149, 250, 250);
+    padding: 20px;
+    margin: 0 auto;
+
+    display: grid;
+    /* grid-template-columns: 1fr 2fr 2fr 1fr; */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.grid-container .element{
+    background-color: rgb(49, 174, 174);
+    padding: 20px;
+}
+
+
+.flex-container{
+    max-width: 1200px;
+    background-color: rgb(149, 149, 250);
+    padding: 20px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* align-content: space-between; */
+}
+
+.flex-container .element{
+    background-color: blue;
+    padding: 20px 40px;
+    /* margin-bottom: 10px; */
+}
+
+
+/* nav-bar */
+.nav-bar{
+    max-width: 1440px;
+    background-color: #592EA9;
+    margin: 0 auto;
+    padding: 25px 80px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar .nav-subscribe{
+    display: flex;
+    gap: 32px;
+}
+
+.nav-bar .nav-subscribe nav{
+    display: flex;
+    gap: 24px;   
+}
+
+.nav-bar .nav-subscribe nav a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.nav-bar .nav-subscribe button{
+    margin: -10px;
+    padding: 10px 30px;
+}
+
+
+
+/* стили для ширины экрана менее 850 пикс */
+@media (max-width: 850px){
+    h1{
+        color: red;
+    }
+
+    .grid-container{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        background-color: cadetblue;
+    }
+}
+
+/* стили для ширины экрана менее 630 пикс */
+@media (max-width: 630px){
+    .flex-container{
+        gap: 10px;
+    }
+}
+
+/* стили для ширины экрана менее 550 пикс */
+@media (max-width: 550px){
+    h1{
+        display: none;
+    }
+
+    .grid-container{
+        gap: 5px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* стили для ширины экрана менее 400 пикс */
+@media (max-width: 400px){
+    h1{
+        display: block;
+        text-align: center;
+        font-size: 26px;
+    }
+
+    .grid-container{
+        gap: 10px;
+        grid-template-columns: 1fr;
+    }
+}
